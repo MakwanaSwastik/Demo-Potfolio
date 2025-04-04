@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!-- Google Fonts -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+  </style>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-dark text-light">
+  <button class="backToTop">
+    <i class="fa-solid fa-arrow-up" style="color: #ff014f;"></i>    
+</button>
+  <nav class="navbar navbar-dark sti-top navbar-expand-lg justify-content-center sticky-top ">
+    <div class="container-fluid mx-lg-5 mx-sm-1 mx-md-3">
+      <a class="navbar-brand" href="#">
+        <img src="img/logo.png" alt="logo" class="navbar-brand-img">
+      </a>
+      <div class="d-grid gap-3 d-flex justify-content-end">
+        <ul class="navbar-nav d-none d-xl-flex gap-2">
+          <li class="nav-item">
+            <a class="nav-link " href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#features">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#portfolio">Portfolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#resume">Resume</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#testimonial">Testimonial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#clients">Clients</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#pricing">Pricing</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#blog">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contacts</a>
+          </li>
+        </ul>
+        <div class="d-flex gap-2">
+          <div class="cart-icon text-white me-md-2 align-self-center justify-content-center">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span class="badge">0</span>
+          </div>
+          <button type="button" class="btn btn-outline-light me-md-2">buy now</button>
+          <button class="navbar-toggler d-lg-block d-xl-none me-md-2 align-item-center" type="button"
+            data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+            aria-label="Toggle navigation">
+            <i class="fa-solid fa-bars icon-color"></i> </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="offcanvas offcanvas-start text-bg-dark bg-dark p-2" tabindex="-1" id="offcanvasDarkNavbar"
+    aria-labelledby="offcanvasDarkNavbarLabel">
+    <div class="offcanvas-body">
+      <div style="padding: 16px 0;" class="d-flex justify-content-between">
+        <img src="img/logos-circle.png" alt="logo" class="offcanvas-title" id="offcanvasDarkNavbarLabel">
+        <button type="button" class="custom-close cart-icon align-self-center" data-bs-dismiss="offcanvas"
+          aria-label="Close">
+          <i class="fa-solid fa-xmark icon-color"></i>
+        </button>
+      </div>
+      <p class="text-white">
+        Inbio is a all in one personal portfolio WordPress theme. You can customize everything.
+      </p>
+      <hr class="bg-white">
+      <ul class="navbar-nav justify-content-end flex-grow-1 pe-3 d-flex flex-column">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Portfolio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Resume</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Testimonial</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Clients</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contacts</a>
+        </li>
+        </li>
+      </ul>
+      <hr class="bg-white">
+      <div class="d-flex flex-column">
+        <div class="icon-list">
+          <p class="links-name">find with me</p>
+          <button><i class="fab fa-facebook-f"></i></button>
+          <button><i class="fa-brands fa-x-twitter"></i></button>
+          <button><i class="fab fa-linkedin-in"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero container" id="home">
+    <div class="row">
+      <div class="hero-img col-lg-5 col-12 order-lg-last">
+        <!-- Large Image for desktops -->
+        <div class="shadow">
+        </div>
+        <img src="img/banner-01-600x823.png" alt="photo" class="img-fluid">
+      </div>
+      <div class="hero-info col-lg-7 col-12 align-self-center">
+        <p id="wel">Welcome to my world </p>
+        <h1 id="tital">Hi, I’m <span style="color: #ff014f;">Jone Lee</span><br> a UI/UX Design</h1>
+        <p id="sub">I use animation as a third dimension by which to simplify experiences and kuiding thro each and
+          every
+          interaction. I’m not adding motion just to spruce things up, but doing it in ways that.</p>
+        <div class="row mt-auto">
+          <div class="icon-list col-xxl-5 col-xl-5 col-lg-7 col-md-7 col-12">
+            <p class="links-name">find with me</p>
+            <button><i class="fab fa-facebook-f"></i></button>
+            <button><i class="fa-brands fa-x-twitter"></i></button>
+            <button><i class="fab fa-linkedin-in"></i></button>
+          </div>
+          <div class=" icon-list col-xxl-5 col-xl-5 col-lg-7 col-md-7 col-12">
+            <p class="links-name">best skill on</p>
+            <button><img src="img/icons-01.png" alt="icons-01"></button>
+            <button><img src="img/icons-02.png" alt="icons-02"></button>
+            <button><img src="img/icons-03.png" alt="icons-03"></button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Features container justify-content-center my-5" id="features">
+    <p class="tital">Features</p>
+    <h1 class="topic">What I Do</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-lg-5 g-md-4 g-3">
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card custom-card">
+          <div class="card-body p-0">
+            <i data-feather="menu" class="bi bi-card-list mb-3"></i>
+            <h5 class="card-title mb-2">Business Stratagy</h5>
+            <p class="card-text mb-2">I throw myself down among the tall grass by the stream as Ilie close to the earth.
+            </p>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card custom-card">
+          <div class="card-body p-0">
+            <i data-feather="book-open" class="bi bi-card-list mb-3"></i>
+            <h5 class="card-title mb-2">App Development</h5>
+            <p class="card-text mb-2">We'll handle everything from to app
+              development process until it is time to
+              make your project live.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card custom-card">
+          <div class="card-body p-0">
+            <i data-feather="tv" class="bi bi-card-list mb-3"></i>
+            <h5 class="card-title mb-2">Business Stratagy</h5>
+            <p class="card-text mb-2">We'll help you optimize your business
+              processes to maximize profitability
+              and eliminate unnecessary costs.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card custom-card">
+          <div class="card-body p-0">
+            <i data-feather="smartphone" class="bi bi-card-list mb-3"></i>
+            <h5 class="card-title mb-2">Mobile App</h5>
+            <p class="card-text mb-2">Using our expertise in mobile
+              application development to create
+              beautiful pixel-perfect designs.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card custom-card">
+          <div class="card-body p-0">
+            <i data-feather="database" class="bi bi-card-list mb-3"></i>
+            <h5 class="card-title mb-2">SEO Optimisation</h5>
+            <p class="card-text mb-2">Your website ranking matters. Our SEO
+              services will help you get to the top of
+              the ranks and stay there!</p>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card custom-card">
+          <div class="card-body p-0">
+            <i data-feather="codepen" class="bi bi-card-list mb-3"></i>
+            <h5 class="card-title mb-2">UX Consulting</h5>
+            <p class="card-text mb-2">A UX consultant is responsible for
+              many of the same tasks as a UX
+              designer, but they typically.</p>
+            <a href="#" class="btn btn-primary"><i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="work container justify-content-center my-5" id="portfolio">
+    <p class="tital text-center">Visit my portfolio and keep your feedback</p>
+    <h1 class="topic text-center">My Portfolio</h1>
+    <div class="row row-cols-1 row-cols-md-3 g-lg-5 g-md-4 g-3">
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="p-4">
+            <div class="card-img">
+              <i data-feather="menu" class="bi bi-card-list mb-3 position-absolute top-2 end-1 m-2"></i>
+              <img src="img/portfolio-large-01-800x600.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="port card-body mx-2">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="sub-topic start m-0">Gallery</p>
+              <button class="likes d-flex gap-2 btn p-1">
+                <i class="fa-regular fa-heart align-self-center"></i>
+                <p class="m-0">12344</p>
+              </button>
+            </div>
+            <p class="card-title">NFT Dashboard Application Development <i
+                class="fa-solid fa-arrow-up-right-from-square"></i> </p>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="p-4">
+            <div class="card-img">
+              <i data-feather="video" class="bi bi-card-list mb-3 position-absolute top-2 end-1 m-2"></i>
+              <img src="img/portfolio-large-02.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="port card-body mx-2">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="sub-topic start m-0">video</p>
+              <button class="likes d-flex gap-2 btn p-1">
+                <i class="fa-regular fa-heart align-self-center"></i>
+                <p class="m-0">513</p>
+              </button>
+            </div>
+            <a class="card-title">Online Food Delivery Mobile App Design <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="p-4">
+            <div class="card-img">
+              <i data-feather="share" class="bi bi-card-list mb-3 position-absolute top-2 end-1 m-2"></i>
+              <img src="img/portfolio-large-03.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="port card-body mx-2">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="sub-topic start m-0">External Link</p>
+              <button class="likes d-flex gap-2 btn p-1">
+                <i class="fa-regular fa-heart align-self-center"></i>
+                <p class="m-0">1502</p>
+              </button>
+            </div>
+            <a class="card-title">Travel App Design Creativity & Application <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="p-4">
+            <div class="card-img">
+              <i data-feather="image" class="bi bi-card-list mb-3 position-absolute top-2 end-1 m-2"></i>
+              <img src="img/portfolio-large-04.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="port card-body mx-2">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="sub-topic start m-0">images</p>
+              <button class="likes d-flex gap-2 btn p-1">
+                <i class="fa-regular fa-heart align-self-center"></i>
+                <p class="m-0">715</p>
+              </button>
+            </div>
+            <a class="card-title">Workout Website Design And Development <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="p-4">
+            <div class="card-img">
+              <i data-feather="menu" class="bi bi-card-list mb-3 position-absolute top-2 end-1 m-2"></i>
+              <img src="img/portfolio-large-05.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="port card-body mx-2">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="sub-topic start m-0">Gallery</p>
+              <button class="likes d-flex gap-2 btn p-1">
+                <i class="fa-regular fa-heart align-self-center"></i>
+                <p class="m-0">644</p>
+              </button>
+            </div>
+            <a class="card-title">Mobile Application Landing Page Design <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="col col-12 col-md-6 col-lg-4">
+        <div class="card">
+          <div class="p-4">
+            <div class="card-img">
+              <i data-feather="image" class="bi bi-card-list mb-3 position-absolute top-2 end-1 m-2"></i>
+              <img src="img/portfolio-06.jpg" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="port card-body mx-2">
+            <div class="d-flex justify-content-between align-items-center mb-1">
+              <p class="sub-topic start m-0">Standard</p>
+              <button class="likes d-flex gap-2 btn p-1">
+                <i class="fa-regular fa-heart align-self-center"></i>
+                <p class="m-0">246</p>
+              </button>
+            </div>
+            <a class="card-title">Restaurant Mobile App Figma Design <i
+                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Resume container py-5" id="resume">
+    <p class="tital text-center">Visit my portfolio and keep your feedback</p>
+    <h1 class="topic text-center">My Portfolio</h1>
+    <nav>
+      <div class="nav nav-tabs row" id="nav-tab" role="tablist">
+        <button class="nav-link active col-lg-3 p-lg-4 p-3" id="nav-education-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-education" type="button" role="tab" aria-controls="nav-education"
+          aria-selected="true">Education</button>
+        <button class="nav-link col-lg-3 p-lg-4 p-3" id="nav-professional-skills-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-professional-skills" type="button" role="tab" aria-controls="nav-professional-skills"
+          aria-selected="false">Professional Skills</button>
+        <button class="nav-link col-lg-3 p-lg-4 p-3" id="nav-experience-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-experience" type="button" role="tab" aria-controls="nav-experience"
+          aria-selected="false">Experience</button>
+        <button class="nav-link col-lg-3 p-lg-4 p-3" id="nav-interview-tab" data-bs-toggle="tab"
+          data-bs-target="#nav-interview" type="button" role="tab" aria-controls="nav-interview"
+          aria-selected="false">Interview</button>
+      </div>
+    </nav>
+    <div class="tab-content" id="nav-tabContent">
+      <div class="tab-pane fade show active" id="nav-education" role="tabpanel" aria-labelledby="nav-education-tab"
+        tabindex="0">
+        <div class="row mt-5">
+          <div class="col-lg-6 col-sm-12 p-3">
+            <p class="tital">1998 - 2010</p>
+            <h1 class="eevk">Education Quality</h1>
+            <div class="edu">
+              <div class="edu-box mt-lg-5 mt-md-4 mt-3">
+                <div class="inner">
+                  <div class="inner-hed d-lg-flex justify-content-between align-items-center">
+                    <div class="inner-hed-left">
+                      <h1>BSc in Computer Science</h1>
+                      <p>University of DVI (2006 - 2010)</p>
+                    </div>
+                    <button class="px-2 py-1 rounded">3.90/4</button>
+                  </div>
+
+                  <div class="inner-body">
+                    <p class="m-0">The training provided by universities in order to prepare people to work in various
+                      sectors of
+                      the
+                      economy or areas of culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="edu-box mt-lg-5 mt-md-4 mt-3">
+                <div class="inner">
+                  <div class="inner-hed d-lg-flex justify-content-between align-items-center">
+                    <div class="inner-hed-left">
+                      <h1>BSc in Computer Science</h1>
+                      <p>University of DVI (2006 - 2010)</p>
+                    </div>
+                    <button class="px-2 py-1 rounded">3.90/4</button>
+                  </div>
+
+                  <div class="inner-body">
+                    <p class="m-0">The training provided by universities in order to prepare people to work in various
+                      sectors of
+                      the
+                      economy or areas of culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="edu-box mt-lg-5 mt-md-4 mt-3">
+                <div class="inner">
+                  <div class="inner-hed d-lg-flex justify-content-between align-items-center">
+                    <div class="inner-hed-left">
+                      <h1>BSc in Computer Science</h1>
+                      <p>University of DVI (2006 - 2010)</p>
+                    </div>
+                    <button class="px-2 py-1 rounded">3.90/4</button>
+                  </div>
+
+                  <div class="inner-body">
+                    <p class="m-0">The training provided by universities in order to prepare people to work in various
+                      sectors of
+                      the
+                      economy or areas of culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-sm-12 p-3">
+            <p class="tital">1998 - 2010</p>
+            <h1 class="eevk">Education Quality</h1>
+            <div class="edu">
+              <div class="edu-box mt-lg-5 mt-md-4 mt-3">
+                <div class="inner">
+                  <div class="inner-hed d-lg-flex justify-content-between align-items-center">
+                    <div class="inner-hed-left">
+                      <h1>BSc in Computer Science</h1>
+                      <p>University of DVI (2006 - 2010)</p>
+                    </div>
+                    <button class="px-2 py-1 rounded">3.90/4</button>
+                  </div>
+
+                  <div class="inner-body">
+                    <p class="m-0">The training provided by universities in order to prepare people to work in various
+                      sectors of
+                      the
+                      economy or areas of culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="edu-box mt-lg-5 mt-md-4 mt-3">
+                <div class="inner">
+                  <div class="inner-hed d-lg-flex justify-content-between align-items-center">
+                    <div class="inner-hed-left">
+                      <h1>BSc in Computer Science</h1>
+                      <p>University of DVI (2006 - 2010)</p>
+                    </div>
+                    <button class="px-2 py-1 rounded">3.90/4</button>
+                  </div>
+
+                  <div class="inner-body">
+                    <p class="m-0">The training provided by universities in order to prepare people to work in various
+                      sectors of
+                      the
+                      economy or areas of culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="edu-box mt-lg-5 mt-md-4 mt-3">
+                <div class="inner">
+                  <div class="inner-hed d-lg-flex justify-content-between align-items-center">
+                    <div class="inner-hed-left">
+                      <h1>BSc in Computer Science</h1>
+                      <p>University of DVI (2006 - 2010)</p>
+                    </div>
+                    <button class="px-2 py-1 rounded">3.90/4</button>
+                  </div>
+
+                  <div class="inner-body">
+                    <p class="m-0">The training provided by universities in order to prepare people to work in various
+                      sectors of
+                      the
+                      economy or areas of culture.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade container" id="nav-experience" role="tabpanel" aria-labelledby="nav-experience-tab"
+        tabindex="0">
+        <div class="container py-5 pb-0">
+          <div class="soon">
+            <img src="img/soon.jpg" alt="comming soon" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-interview" role="tabpanel" aria-labelledby="nav-interview-tab" tabindex="0">
+        <div class="container py-5 pb-0">
+          <div class="soon">
+            <img src="img/soon.jpg" alt="comming soon" class="img-fluid">
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="nav-professional-skills" role="tabpanel"
+        aria-labelledby="nav-professional-skills-tab" tabindex="0">
+        <div class="row mt-5">
+          <div class="col-lg-6 col-sm-12 p-3">
+            <p class="tital">Features</p>
+            <h1 class="eevk">Design Skill</h1>
+            <div class="pros">
+              <!-- Reusable Skill Progress Component -->
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0">PHOTOSHOT</p>
+                  <p class="mb-0">100%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 95%;">
+                  <p class="mb-0">FIGMA</p>
+                  <p class="mb-0">95%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 60%;">
+                  <p class="mb-0">ADOBE XD</p>
+                  <p class="mb-0">60%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 60%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 70%;">
+                  <p class="mb-0">ADOBE ILLUSTRATOR</p>
+                  <p class="mb-0">70%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 70%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 90%;">
+                  <p class="mb-0">DESIGN</p>
+                  <p class="mb-0">90%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 col-sm-12 p-3">
+            <p class="tital">Features</p>
+            <h1 class="eevk">Development Skill</h1>
+            <div class="pros">
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center">
+                  <p class="mb-0">HTML</p>
+                  <p class="mb-0">100%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="100" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 100%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 95%;">
+                  <p class="mb-0">CSS</p>
+                  <p class="mb-0">95%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="95" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 95%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 60%;">
+                  <p class="mb-0">JAVASCRIPT</p>
+                  <p class="mb-0">60%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="60" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 60%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 70%;">
+                  <p class="mb-0">SOFTWARE</p>
+                  <p class="mb-0">70%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="70" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 70%;"></div>
+                </div>
+              </div>
+
+              <div class="skill-progress">
+                <div class="d-flex justify-content-between align-items-center" style="width: 90%;">
+                  <p class="mb-0">PLUGIN</p>
+                  <p class="mb-0">90%</p>
+                </div>
+                <div class="progress" role="progressbar" aria-label="Skill level" aria-valuenow="90" aria-valuemin="0"
+                  aria-valuemax="100">
+                  <div class="progress-bar" style="--width: 90%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Testimonial py-5 position-relative" id="testimonial">
+    <p class="tital text-center">Visit my portfolio and keep your feedback</p>
+    <h1 class="topic text-center">My Portfolio</h1>
+    <div class="container-fluid py-5">
+      <div class="row">
+        <div class="test p-0"
+          style="box-shadow: var(--box-shadow); border-radius: var(--border-radius); padding: 12px 0;">
+          <div class="test-img-box">
+            <div class="test-img p-4">
+              <div class="card-img">
+              <img src="img/final-home-1st.png" alt="Profile Picture" class="img-fluid">
+              </div>
+            </div>
+            <div class="p-4 pt-0 test-img">
+              <div class="d-flex flex-column justify-content-center text-left" style="height: 100%;">
+                <p class="text-start w-100">RAINBOW- THEMES</p>
+                <div class="test-img-inner">
+                  <h1>Nevine Acotanza</h1>
+                  <p class="mb-0">Chief Operating Office</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="test-info col d-flex p-0">
+          <div class="infoOfTestimonial justify-content-end">
+            <div class="inner-btn justify-content-end flex-wrap gap-3">
+              <button class="btn btn-outline-light mb-2"><i class="fa-solid fa-arrow-left"></i></button>
+              <button class="btn btn-outline-light mb-2"><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="inner-test p-5" style="box-shadow: var(--box-shadow);">
+              <div>
+                <div class="inner-head d-lg-flex justify-content-between align-items-center">
+                  <div>
+                    <h1>Travel Mobile App Design.</h1>
+                    <p>via Upwork - Mar 4, 2015 - Aug 30, 2021 test</p>
+                  </div>
+                  <button class="rating">
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                    <i class="fa-solid fa-star fa-2xs" style="color: #FFD43B;"></i>
+                  </button>
+                </div>
+              </div>
+              <div class="inner-body">
+                <p class="text-justify m-0" style="margin-top: 16px !important;">Maecenas finibus nec sem ut
+                  imperdiet.
+                  Ut tincidunt est ac dolor aliquam sodales. Phasellus sed mauris hendrerit, laoreet sem in, lobortis
+                  mauris
+                  hendrerit ante. Ut tincidunt est ac dolor aliquam sodales phasellus smauris test.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> <!-- Closing container-fluid -->
+    <!-- Carousel Indicators Moved Outside -->
+    <div class="change d-flex justify-content-center align-content-center gap-2 my-5">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+    </div>
+    <div class="container">
+    </div>
+  </div>
+  <div class="Clients" id="clients">
+    <div class="container py-5">
+      <p class="tital">Popular Clients</p>
+      <h1 class="topic">Awesome Clients</h1>
+      <div class="row g-4 mb-5">
+        <div class="d-flex flex-column flex-lg-row align-items-start">
+          <div class="nav flex-column nav-pills me-3 mb-3 mb-lg-0  col-lg-4 col-12 " id="v-pills-tab" role="tablist"
+            aria-orientation="vertical" style="box-shadow: var(--box-shadow); border-radius: 10px;">
+            <button class="nav-link active p-4" id="v-pills-product-design-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-product-design" type="button" role="tab" aria-controls="v-pills-product-design"
+              aria-selected="true">Product Design</button>
+            <button class="nav-link p-4" id="v-pills-javascript-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-javascript" type="button" role="tab" aria-controls="v-pills-javascript"
+              aria-selected="false">JavaScript</button>
+            <button class="nav-link p-4" id="v-pills-wordpress-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-wordpress" type="button" role="tab" aria-controls="v-pills-wordpress"
+              aria-selected="false">WordPress</button>
+            <button class="nav-link p-4" id="v-pills-html-to-react-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-html-to-react" type="button" role="tab" aria-controls="v-pills-html-to-react"
+              aria-selected="false">HTML to React</button>
+            <button class="nav-link p-4" id="v-pills-react-to-laravel-tab" data-bs-toggle="pill"
+              data-bs-target="#v-pills-react-to-laravel" type="button" role="tab"
+              aria-controls="v-pills-react-to-laravel" aria-selected="false">React To Laravel</button>
+            <button class="nav-link p-4" id="v-pills-python-tab" data-bs-toggle="pill" data-bs-target="#v-pills-python"
+              type="button" role="tab" aria-controls="v-pills-python" aria-selected="false">Python</button>
+          </div>
+          <div class="tab-content col-lg-8 col-12" id="v-pills-tabContent">
+            <div class="tab-pane fade show active" id="v-pills-product-design" role="tabpanel"
+              aria-labelledby="v-pills-product-design-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client1-1.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Robert Downey Jr.</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client1-1.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Chris Evans</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client2.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Scarlett Johansson</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client3.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Chris Hemsworth</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client4.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Mark Ruffalo</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client1-1.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Tom Holland</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client1-1.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Robert Downey Jr.</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client1-1.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Chris Evans</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-3">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client2.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Scarlett Johansson</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 ">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client3.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Chris Hemsworth</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client4.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Mark Ruffalo</h5>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                  <div class="card">
+                    <div class="card-img p-2 align-items-center d-flex justify-content-center">
+                      <img src="img/client1-1.png" alt="...">
+                    </div>
+                    <div class="card-body">
+                      <h5 class="card-title text-center">Tom Holland</h5>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade" id="v-pills-wordpress" role="tabpanel" aria-labelledby="v-pills-wordpress-tab"
+              tabindex="0">WordPress Content</div>
+            <div class="tab-pane fade" id="v-pills-javascript" role="tabpanel" aria-labelledby="v-pills-javascript-tab"
+              tabindex="0">JavaScript Content</div>
+            <div class="tab-pane fade" id="v-pills-html-to-react" role="tabpanel"
+              aria-labelledby="v-pills-html-to-react-tab" tabindex="0">HTML to React Content</div>
+            <div class="tab-pane fade" id="v-pills-react-to-laravel" role="tabpanel"
+              aria-labelledby="v-pills-react-to-laravel-tab" tabindex="0">React To Laravel Content</div>
+            <div class="tab-pane fade" id="v-pills-python" role="tabpanel" aria-labelledby="v-pills-python-tab"
+              tabindex="0">Python Content</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Pricing " id="pricing">
+    <div class="container py-5">
+      <div class="row mb-5">
+        <div class="col-lg-6 col-12">
+          <div class="pricing-tital">
+            <p class="tital">Pricing</p>
+            <h1 class="topic">My Pricing</h1>
+          </div>
+        </div>
+        <div class="price-list col-lg-6 col-12 ">
+          <ul class="nav nav-tabs row " id="pricingTab" role="tablist">
+            <li class="nav-item col-md-4 col-12" role="presentation">
+              <button class="nav-link active" id="pricing-static-tab" data-bs-toggle="tab"
+                data-bs-target="#pricing-static-tab-pane" type="button" role="tab"
+                aria-controls="pricing-static-tab-pane" aria-selected="true">Static</button>
+            </li>
+            <li class="nav-item col-md-4 col-12" role="presentation">
+              <button class="nav-link" id="pricing-standent-tab" data-bs-toggle="tab"
+                data-bs-target="#pricing-standent-tab-pane" type="button" role="tab"
+                aria-controls="pricing-standent-tab-pane" aria-selected="false">Standent</button>
+            </li>
+            <li class="nav-item col-md-4 col-12" role="presentation">
+              <button class="nav-link" id="pricing-premimem-tab" data-bs-toggle="tab"
+                data-bs-target="#pricing-premimem-tab-pane" type="button" role="tab"
+                aria-controls="pricing-premimem-tab-pane" aria-selected="false">Premimem</button>
+            </li>
+          </ul>
+          <div class="tab-content" id="pricingTabContent">
+            <div class="tab-pane fade show active p-4" id="pricing-static-tab-pane" role="tabpanel"
+              aria-labelledby="pricing-static-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="head col-12 d-lg-flex align-items-center">
+                  <div class="col-lg-8">
+                    <h1>Make Your Single Page</h1>
+                    <p>Elementor / WPBakery</p>
+                  </div>
+                  <button class="col-lg-4 btn btn-primary">$30.00</button>
+                </div>
+                <p class="text col-10">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                  as
+                  necessary</p>
+                <div class="ListOfSrv d-lg-flex d--md-flex row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>1 Page with Elementor</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Responsive Design</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>2 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Multipage Elementor</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Figma</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>MAintaine Design</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design With XD</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>8 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="order p-3">order now </button>
+                <div class="deal d-lg-flex flex-row justify-content-center gap-3">
+                  <div class="d-flex align-items-center mb-2">
+                    <i data-feather="clock" class="me-2" width="14px"></i>
+                    <p class="mb-0">2 Days Delivery</p>
+                  </div>
+                  <div class="d-flex">
+                    <i data-feather="activity" class="me-2" width="14px"></i>
+                    <p class="mb-0">Unlimited Revisions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade p-4" id="pricing-standent-tab-pane" role="tabpanel"
+              aria-labelledby="pricing-standent-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="head col-12 d-lg-flex align-items-center">
+                  <div class="col-lg-8">
+                    <h1>Make Your Single Page</h1>
+                    <p>Elementor / WPBakery</p>
+                  </div>
+                  <button class="col-lg-4 btn btn-primary">$30.00</button>
+                </div>
+                <p class="text col-10">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                  as
+                  necessary</p>
+                <div class="ListOfSrv d-lg-flex d--md-flex row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>1 Page with Elementor</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Responsive Design</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>2 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Multipage Elementor</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Figma</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>MAintaine Design</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design With XD</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>8 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="order p-3">order now </button>
+                <div class="deal d-lg-flex flex-row justify-content-center gap-3">
+                  <div class="d-flex align-items-center mb-2">
+                    <i data-feather="clock" class="me-2" width="14px"></i>
+                    <p class="mb-0">2 Days Delivery</p>
+                  </div>
+                  <div class="d-flex">
+                    <i data-feather="activity" class="me-2" width="14px"></i>
+                    <p class="mb-0">Unlimited Revisions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-pane fade p-4" id="pricing-premimem-tab-pane" role="tabpanel"
+              aria-labelledby="pricing-premimem-tab" tabindex="0">
+              <div class="row g-4">
+                <div class="head col-12 d-lg-flex align-items-center">
+                  <div class="col-lg-8">
+                    <h1>Make Your Single Page</h1>
+                    <p>Elementor / WPBakery</p>
+                  </div>
+                  <button class="col-lg-4 btn btn-primary">$30.00</button>
+                </div>
+                <p class="text col-10">All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks
+                  as
+                  necessary</p>
+                <div class="ListOfSrv d-lg-flex d--md-flex row">
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>1 Page with Elementor</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Responsive Design</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Customization</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>2 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-6 col-md-6 col-12">
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Multipage Elementor</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design Figma</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>MAintaine Design</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Content Upload</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>Design With XD</p>
+                    </div>
+                    <div class="d-flex"><i class="fa-solid fa-check me-2"></i>
+                      <p>8 Plugins/Extensions</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="order p-3">order now </button>
+                <div class="deal d-lg-flex flex-row justify-content-center gap-3">
+                  <div class="d-flex align-items-center mb-2">
+                    <i data-feather="clock" class="me-2" width="14px"></i>
+                    <p class="mb-0">2 Days Delivery</p>
+                  </div>
+                  <div class="d-flex">
+                    <i data-feather="activity" class="me-2" width="14px"></i>
+                    <p class="mb-0">Unlimited Revisions</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Blog" id="blog">
+    <div class="container py-5">
+      <p class="tital text-center">Visit my blog and keep your feedback</p>
+      <h1 class="topic text-center">My Blog</h1>
+      <div class="row row-cols-1 row-cols-md-3 g-lg-5 g-md-4 g-3 pb-5">
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="p-4">
+              <div class="card-img">
+                <img src="img/marketing-young-cute-business-lady-striped-shirt-office-show (1).jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="port card-body mx-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <p class="sub-topic start m-0">Development</p>
+                <button class="likes d-flex gap-2 btn p-1">
+                  <i class="fa-regular fa-clock align-self-center"></i>
+                  <p class="m-0 align-self-center">4 Min Read</p>
+                </button>
+              </div>
+              <a class="card-title">The Best Ways to Do Market Research For Your Business Plan. <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="p-4">
+              <div class="card-img">
+                <img src="img/pretty-curly-young-woman-writing-notes-startup-project-1220x.jpg"
+                  class="card-img-top img-fluid" alt="...">
+              </div>
+            </div>
+            <div class="port card-body mx-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <p class="sub-topic start m-0">Quote</p>
+                <button class="likes d-flex gap-2 btn p-1">
+                  <i class="fa-regular fa-clock align-self-center"></i>
+                  <p class="m-0 align-self-center">4 Min Read</p>
+                </button>
+              </div>
+              <a class="card-title">The Easiest Way to Become a Successful Writer and Authors. <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col col-12 col-md-6 col-lg-4">
+          <div class="card">
+            <div class="p-4">
+              <div class="card-img">
+                <img src="img/road-sign-direction-perforated-paper-arrow-1220x686.jpg" class="card-img-top img-fluid"
+                  alt="...">
+              </div>
+            </div>
+            <div class="port card-body mx-2">
+              <div class="d-flex justify-content-between align-items-center mb-1">
+                <p class="sub-topic start m-0">Technician</p>
+                <button class="likes d-flex gap-2 btn p-1">
+                  <i class="fa-regular fa-clock align-self-center"></i>
+                  <p class="m-0 align-self-center">4 Min Read</p>
+                </button>
+              </div>
+              <a class="card-title">The Quickest Way to Deliver Your Message? Make It Visual. <i
+                  class="fa-solid fa-arrow-up-right-from-square"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="Contact container py-5 " style="border-bottom: 2px solid #181a1d;" id="contact">
+    <p class="tital text-center">Contact</p>
+    <h1 class="topic text-center">Contact With Me</h1>
+    <div class="row gx-5 pb-5">
+      <div class="col-12 col-lg-4">
+        <div class="card bg-dark text-light p-2">
+          <div class="p-4">
+            <div class="card-img">
+              <img src="img/contact1.png" class="card-img-top img-fluid" alt="...">
+            </div>
+          </div>
+          <div class="card-body mx-2 pt-0">
+            <h1 class="card-title">Nevine Acotanza</h1>
+            <p class="sub-topic">Chief Operating Officer</p>
+            <div class="card-text">
+              <p>I am available for freelance work. Connect with me via and call in to my account.</p>
+              <div class="cont-info">
+                <p>Phone: <a href="#">+012 345 678 90</a></p>
+                <p>Email: <a href="mailto:nevineacotanza@gmail.com">admin@example.com</a></p>
+              </div>
+              <div class="d-flex flex-column">
+                <div class="icon-list">
+                  <p class="links-name">find with me</p>
+                  <button><i class="fab fa-facebook-f"></i></button>
+                  <button><i class="fa-brands fa-x-twitter"></i></button>
+                  <button><i class="fab fa-linkedin-in"></i></button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container px-3 col-12 col-lg-8">
+        <div class="row">
+          <div class="col-12">
+            <form class="p-4">
+              <div class="row g-4">
+                <div class="col-lg-6 col-12">
+                  <label for="inputName4" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="inputName4">
+                </div>
+                <div class="col-lg-6 col-12">
+                  <label for="inputPhone4" class="form-label">Phone</label>
+                  <input type="text" class="form-control" id="inputPhone4">
+                </div>
+                <div class="col-12">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-12">
+                  <label for="inputSub4" class="form-label">Subject</label>
+                  <input type="text" class="form-control" id="inputSub4">
+                </div>
+                <div class="col-12">
+                  <label for="inputMessage4" class="form-label">Message</label>
+                  <textarea class="form-control" id="inputMessage4" rows="10"></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Send Message</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer">
+    <div class="container py-5 my-5">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-logo">
+            <img src="img/logo.png" alt="" class="img-fluid">
+          </div>
+          <div class="footer-text mt-2">
+            <div class="d-flex flex-column">
+              <div class="icon-list">
+                <button><i class="fab fa-facebook-f"></i></button>
+                <button><i class="fa-brands fa-x-twitter"></i></button>
+                <button><i class="fab fa-linkedin-in"></i></button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-heading">
+            <h3>Quick Links</h3>
+          </div>
+          <div class="footer-list">
+            <ul class="list-unstyled">
+              <li><a href="#">About</a></li>
+              <li><a href="#">Portfolio</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-heading">
+            <h3>Resources</h3>
+          </div>
+          <div class="footer-list">
+            <ul class="list-unstyled">
+              <li><a href="#">Authentication</a></li>
+              <li><a href="#">System Status</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Over Right</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="footer-heading">
+            <h3>Developers</h3>
+          </div>
+          <div class="footer-list">
+            <ul class="list-unstyled">
+              <li><a href="#">Documentation</a></li>
+              <li><a href="#">Authentication</a></li>
+              <li><a href="#">API Reference</a></li>
+              <li><a href="#">Support</a></li>
+              <li><a href="#">Open Source</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copy container my-4 text-center">
+    <p>&copy; 2025. All rights reserved by <a href="#">Rainbow-Themes</a></p>
+  </div>
+  <!-- Bootstrap Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+  <!-- choose one -->
+  <script src="https://unpkg.com/feather-icons"></script>
+  <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+  <script>
+    feather.replace()
+  </script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
