@@ -22,8 +22,7 @@ This is a responsive personal portfolio website built using the **InBio HTML tem
 
 ## 📁 Folder Structure
 
-
-
+```
 Demo-Potfolio/
 │-- assets/
 │-- css/
@@ -31,7 +30,7 @@ Demo-Potfolio/
 │-- index.html
 │-- contact.html
 │-- ...
-
+```
 
 ## 🚀 Getting Started
 
